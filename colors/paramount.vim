@@ -54,7 +54,7 @@ if &background == "dark"
   let s:bg_subtle       = s:lighter_black
   let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
-  let s:norm_subtle     = s:yellow
+  let s:norm_subtle     = s:medium_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
@@ -143,8 +143,8 @@ call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:bg_very_subtle})
 call s:h("Directory",     {"fg": s:dark_blue})
 call s:h("ErrorMsg",      {"fg": s:red})
-call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
-call s:h("Search",        {"bg": s:light_green, "fg": s:light_black})
+call s:h("IncSearch",     {"bg": s:yellow, "fg": s:yellow})
+call s:h("Search",        {"bg": s:light_green, "fg": s:yellow})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:bg_subtle})
