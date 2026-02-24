@@ -180,7 +180,7 @@ else
 endif
 
 "call s:h("NormalFloat",   {"bg": s:bg_subtle})
-call s:h("FloatBorder",   {"fg": s:pink})
+call s:h("FloatBorder",   {"fg": s:yellow})
 
 call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
 call s:h("PmenuSel",      {"fg": s:norm, "bg": s:purple})
