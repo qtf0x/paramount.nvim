@@ -143,8 +143,8 @@ call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:bg_very_subtle})
 call s:h("Directory",     {"fg": s:dark_blue})
 call s:h("ErrorMsg",      {"fg": s:red})
-call s:h("IncSearch",     {"bg": s:yellow, "fg": s:yellow})
-call s:h("Search",        {"bg": s:light_green, "fg": s:yellow})
+call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
+call s:h("Search",        {"bg": s:light_green, "fg": s:light_black})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:bg_subtle})
@@ -178,6 +178,8 @@ else
   call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
   call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
 endif
+
+call s:h("NormalFloat",   {"bg": s:bg_subtle})
 
 call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
 call s:h("PmenuSel",      {"fg": s:norm, "bg": s:purple})
